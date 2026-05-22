@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Atividade5 {
+public class Parcelamento {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -18,9 +18,7 @@ public class Atividade5 {
 
         System.out.printf("O valor do produto é: %.2f%n" +
                           "Parcelado em %dXaa de R$ %.2f",
-                          produto, parcelas, valorTotal
-        );
-
+                          produto, parcelas, valorTotal);
     }
 }
 
