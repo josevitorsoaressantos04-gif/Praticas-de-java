@@ -1,0 +1,139 @@
+import java.util.Scanner;
+
+
+public class Atividade1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+         String n1;
+
+         String n2;
+
+        System.out.print("Digite o valor de n1: ");
+        n1 = scan.nextLine();
+
+        System.out.print("Digite o valor de n2: ");
+        n2 = scan.nextLine();
+
+        System.out.println("O total é: "+  n1 + n2);
+
+    }
+}
+
+import java.util.Scanner;
+
+public class Atividade2 {
+    public static void main(String[] args) {
+        // declarar as váriaveis
+        Scanner scan = new Scanner(System.in);
+
+        double nt1, nt2, nt3, nt4, nt5;
+        double media;
+
+        //entrada
+        //Dar valor as váriaveis
+        System.out.print("Digite a primeira nota do aluno: ");
+         nt1 = scan.nextDouble();
+
+        System.out.print("Digite a segunda nota do aluno: ");
+        nt2 = scan.nextDouble();
+
+        System.out.print("Digite a terceira nota do aluno: ");
+        nt3 = scan.nextDouble();
+
+        System.out.print("Digite a quarta nota do aluno: ");
+        nt4 = scan.nextDouble();
+
+        System.out.print("Digite a quinta nota do aluno: ");
+        nt5 = scan.nextDouble();
+
+        //Cálculo da média
+        media = (nt1 + nt2 + nt3 + nt4 + nt5)/5;
+
+        System.out.printf("A média do aluno é: %.2f ", media);
+
+    }
+}
+
+import java.util.Scanner;
+
+public class Atividade3 {
+    public static void main(String[] args) {
+
+        //declarar variável
+        Scanner scan = new Scanner(System.in);
+
+        double desconto, preco, valorTotal;
+
+        //Entrada
+        System.out.print("Qual o valor do produto?");
+        preco = scan.nextDouble();
+
+        System.out.print("Quantos porcento de desconto?");
+        desconto = scan.nextDouble();
+        // sistema primeiro converte a várivel desconto para porcentagem
+        // depois converte para um número decimal ou inteiro dependendo do valor
+        // e depois realiza o calculo do preço - desconto
+        valorTotal = preco - (preco * (desconto/100));
+
+        //Saída
+        System.out.printf("O valor total com desconto é: %.2f", valorTotal);
+
+
+
+
+    }
+}
+
+import java.util.Scanner;
+
+public class Atividade4 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        double totalVendas, pcComissao,pagamento;
+        pcComissao = 5 ;// porcentagem da comissao
+
+        System.out.print("Digite qual foi o total de venda esse mês:");
+        totalVendas = scan.nextDouble();
+
+        pagamento = totalVendas * (pcComissao/100);
+
+        System.out.printf("Sua comissão é de: R$ %.2f", pagamento);
+
+
+
+
+    }
+}
+
+import java.util.Scanner;
+
+public class Atividade5 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        double produto, valorTotal;
+        int parcelas;
+
+        System.out.print("Digite o valor do produto: ");
+        produto = scan.nextDouble();
+
+        System.out.print("Vai parcelar em quantas vezes?");
+        parcelas = scan.nextInt();
+
+
+        valorTotal = produto / parcelas;
+
+        System.out.printf("O valor do produto é: %.2f%n" +
+                          "Parcelado em %dXaa de R$ %.2f",
+                          produto, parcelas, valorTotal
+        );
+
+    }
+}
+
+
+
+
+
